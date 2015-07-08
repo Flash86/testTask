@@ -1,0 +1,125 @@
+-
+  name: 'Index page'
+  uriPattern: ''
+  defaults:
+    '@package':    'Acme.Ecommerce'
+    '@controller': 'Standard'
+    '@action':     'index'
+    '@format':     'html'
+-
+  name: 'Get product by id'
+  uriPattern: 'product/{productId}'
+  defaults:
+    '@package':    'Acme.Ecommerce'
+    '@controller': 'Product'
+    '@action':     'getProduct'
+    '@format':     'json'
+-
+  name: 'Get products of category'
+  uriPattern: 'category/{categoryId}/products'
+  defaults:
+    '@package':    'Acme.Ecommerce'
+    '@controller': 'Product'
+    '@action':     'getByCategory'
+    '@format':     'json'
+-
+  name: 'Get products photos'
+  uriPattern: 'products/{productId}/photos'
+  defaults:
+    '@package':    'Acme.Ecommerce'
+    '@controller': 'Product'
+    '@action':     'getPhotosOfProduct'
+    '@format':     'json'
+
+-
+  name: 'User login'
+  uriPattern: 'user'
+  defaults:
+    '@package':    'Acme.Ecommerce'
+    '@controller': 'User'
+    '@format':     'json'
+    '@action':     'index'
+  httpMethods:
+     - GET
+-
+  name: 'User login'
+  uriPattern: 'user/login'
+  defaults:
+    '@package':    'Acme.Ecommerce'
+    '@controller': 'User'
+    '@format':     'json'
+    '@action':     'login'
+  httpMethods:
+     - POST
+-
+  name: 'User logout'
+  uriPattern: 'user/{@action}'
+  defaults:
+    '@package':    'Acme.Ecommerce'
+    '@controller': 'User'
+    '@format':     'json'
+    '@action':      'logout'
+  httpMethods:
+     - GET
+
+#Cart
+-
+  name: 'Add product to cart'
+  uriPattern: 'cart/curency/{curencyId}'
+  defaults:
+    '@package':    'Acme.Ecommerce'
+    '@controller': 'Cart'
+    '@format':     'json'
+    '@action':      'index'
+  httpMethods:
+     - GET
+-
+  name: 'Add product to cart'
+  uriPattern: 'cart/add'
+  defaults:
+    '@package':    'Acme.Ecommerce'
+    '@controller': 'Cart'
+    '@format':     'json'
+    '@action':      'add'
+  httpMethods:
+     - POST
+-
+  name: 'Remove product from cart'
+  uriPattern: 'cart/remove'
+  defaults:
+    '@package':    'Acme.Ecommerce'
+    '@controller': 'Cart'
+    '@format':     'json'
+    '@action':     'remove'
+  httpMethods:
+     - POST
+-
+  name: 'Clear cart'
+  uriPattern: 'cart/clear'
+  defaults:
+    '@package':    'Acme.Ecommerce'
+    '@controller': 'Cart'
+    '@format':     'json'
+    '@action':     'clear'
+  httpMethods:
+     - GET
+-
+  name: 'Order'
+  uriPattern: 'order/curency/{curencyId}'
+  defaults:
+    '@package':    'Acme.Ecommerce'
+    '@controller': 'Cart'
+    '@format':     'json'
+    '@action':     'order'
+  httpMethods:
+     - GET
+-
+  name: 'Invoice'
+  uriPattern: 'invoice/{orderId}'
+  defaults:
+    '@package':    'Acme.Ecommerce'
+    '@controller': 'Cart'
+    '@format':     'json'
+    '@action':     'getInfoice'
+  httpMethods:
+     - GET

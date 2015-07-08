@@ -1,0 +1,226 @@
+-- MySQL dump 10.13  Distrib 5.5.43, for debian-linux-gnu (i686)
+--
+-- Host: localhost    Database: AcmeEcommerce
+-- ------------------------------------------------------
+-- Server version	5.5.43-0ubuntu0.14.10.1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `acme_ecommerce_domain_model_category`
+--
+
+DROP TABLE IF EXISTS `acme_ecommerce_domain_model_category`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `acme_ecommerce_domain_model_category` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `acme_ecommerce_domain_model_category`
+--
+
+LOCK TABLES `acme_ecommerce_domain_model_category` WRITE;
+/*!40000 ALTER TABLE `acme_ecommerce_domain_model_category` DISABLE KEYS */;
+INSERT INTO `acme_ecommerce_domain_model_category` VALUES (1,'Cars'),(2,'Motorcycles');
+/*!40000 ALTER TABLE `acme_ecommerce_domain_model_category` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `acme_ecommerce_domain_model_curency`
+--
+
+DROP TABLE IF EXISTS `acme_ecommerce_domain_model_curency`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `acme_ecommerce_domain_model_curency` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(10) COLLATE utf8_unicode_ci NOT NULL,
+  `exchangerates` decimal(10,5) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `acme_ecommerce_domain_model_curency`
+--
+
+LOCK TABLES `acme_ecommerce_domain_model_curency` WRITE;
+/*!40000 ALTER TABLE `acme_ecommerce_domain_model_curency` DISABLE KEYS */;
+INSERT INTO `acme_ecommerce_domain_model_curency` VALUES (1,'UAH',1.00000),(2,'USD',0.04348),(3,'EUR',0.03348);
+/*!40000 ALTER TABLE `acme_ecommerce_domain_model_curency` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `acme_ecommerce_domain_model_image`
+--
+
+DROP TABLE IF EXISTS `acme_ecommerce_domain_model_image`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `acme_ecommerce_domain_model_image` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `product` int(11) DEFAULT NULL,
+  `imageurl` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `title` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `IDX_CF5EA8B5D34A04AD` (`product`),
+  CONSTRAINT `FK_CF5EA8B5D34A04AD` FOREIGN KEY (`product`) REFERENCES `acme_ecommerce_domain_model_product` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=91 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `acme_ecommerce_domain_model_image`
+--
+
+LOCK TABLES `acme_ecommerce_domain_model_image` WRITE;
+/*!40000 ALTER TABLE `acme_ecommerce_domain_model_image` DISABLE KEYS */;
+INSERT INTO `acme_ecommerce_domain_model_image` VALUES (1,1,'photo/231056','name_9EXZE0d6'),(2,1,'photo/660173','name_qBtQvyx6zb'),(3,1,'photo/5145530','name_b65lc6g'),(4,1,'photo/2192600','name_qSIpwIDDM'),(5,1,'photo/4695705','name_oXUUv'),(6,2,'photo/6393748','name_zPDEbPKs'),(7,2,'photo/502866','name_SVdhsVU5'),(8,2,'photo/7188916','name_a7l41Qx'),(9,2,'photo/445814','name_azuZd9a2UC'),(10,2,'photo/927589','name_v0DMtzH'),(11,3,'photo/7308598','name_qOqhltc'),(12,3,'photo/5156837','name_HvgRG'),(13,3,'photo/3025532','name_jobOpOBSn'),(14,3,'photo/3073732','name_Foa4PZu'),(15,3,'photo/1047966','name_YjQ11m'),(16,4,'photo/5804489','name_mYQbnFMg'),(17,4,'photo/477300','name_IIuTM'),(18,4,'photo/3134981','name_hpcfJ3gKpy'),(19,4,'photo/6336525','name_8hP680u'),(20,4,'photo/7938841','name_LQStymmlF'),(21,5,'photo/4496162','name_Pv9zVHcnPu'),(22,5,'photo/2130286','name_Cdqq0bgSEO'),(23,5,'photo/2368819','name_aUgN0'),(24,5,'photo/7083006','name_PdPo8xBwm'),(25,5,'photo/1073282','name_iJXJ9XUqP'),(26,6,'photo/5870121','name_YQcZyTO'),(27,6,'photo/7686187','name_dUfOqCVaU'),(28,6,'photo/6643206','name_DO4yf'),(29,6,'photo/9124822','name_uYHTX'),(30,6,'photo/5549075','name_W6ZLS'),(31,7,'photo/9686014','name_dAInvnv8c'),(32,7,'photo/5800874','name_ruOWtwPr5'),(33,7,'photo/9466190','name_bW94E7Q'),(34,7,'photo/6275165','name_4dCrI0WRdw'),(35,7,'photo/5548949','name_1nBuUrWZo'),(36,8,'photo/4748538','name_ZA6Cva'),(37,8,'photo/8325516','name_Cx8zp'),(38,8,'photo/3577692','name_X17kD'),(39,8,'photo/6143603','name_4ydsSp'),(40,8,'photo/7989126','name_ENWKprV'),(41,9,'photo/7901025','name_6c4c96kuJ'),(42,9,'photo/9376896','name_NuWgml4I0'),(43,9,'photo/8605414','name_Lg7GvGeip'),(44,9,'photo/3415844','name_txEzS8j'),(45,9,'photo/8089737','name_6iOnF9soaj'),(46,10,'photo/1805850','name_6SPphbUL'),(47,10,'photo/7278963','name_kBHEpyLH'),(48,10,'photo/3665259','name_nwALG'),(49,10,'photo/9081659','name_Bu0dAS3Za'),(50,10,'photo/2347504','name_VXsgy9UYIF'),(51,11,'photo/529687','name_pOijETOF'),(52,11,'photo/1172774','name_yaoIpiD'),(53,11,'photo/3694833','name_UVUOTCuzH'),(54,11,'photo/2983070','name_jHsB16vP'),(55,11,'photo/7712275','name_ejND2cVG'),(56,12,'photo/5025177','name_opeTYWbC'),(57,12,'photo/2556320','name_4RUamJWZYg'),(58,12,'photo/7835437','name_iZwYydz3'),(59,12,'photo/8295713','name_s4Rr023gV7'),(60,12,'photo/1236578','name_iuAetyvgaO'),(61,13,'photo/8034557','name_mRKkkObLOe'),(62,13,'photo/8290472','name_aXc0f'),(63,13,'photo/6957706','name_ua90rjOG'),(64,13,'photo/167991','name_uVXlGiFu'),(65,13,'photo/4786531','name_jHgoSeB'),(66,14,'photo/4806871','name_tDYUXMAYn4'),(67,14,'photo/9140192','name_qAD657x'),(68,14,'photo/3994336','name_ONH2ozwG3'),(69,14,'photo/4940760','name_Hs4Ff'),(70,14,'photo/6562369','name_DJyZ99Cf'),(71,15,'photo/6405412','name_BqgEPQaw'),(72,15,'photo/9104798','name_GB8KhnpV'),(73,15,'photo/169943','name_t0iDC'),(74,15,'photo/5421221','name_mkvWWWdAM3'),(75,15,'photo/7605773','name_YqYAyJ'),(76,16,'photo/7802024','name_ggXyTA6LWr'),(77,16,'photo/2816074','name_ne6Y0aJj89'),(78,16,'photo/2867526','name_I0zE9mBqC'),(79,16,'photo/5579188','name_v85h5wyYTM'),(80,16,'photo/837947','name_NfB6nLo5tp'),(81,17,'photo/257921','name_YDhX9p2qv'),(82,17,'photo/5635401','name_usLzkyOWFc'),(83,17,'photo/7016092','name_iasXi'),(84,17,'photo/149804','name_0ZDiWMIZcd'),(85,17,'photo/5508434','name_I1Whmv'),(86,18,'photo/3049804','name_eBaGzsHytH'),(87,18,'photo/1896899','name_DYtDaHbmp'),(88,18,'photo/1991999','name_HyONQZ'),(89,18,'photo/1104235','name_eI1VhuDPXk'),(90,18,'photo/235716','name_YZdBaVMwk');
+/*!40000 ALTER TABLE `acme_ecommerce_domain_model_image` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `acme_ecommerce_domain_model_invoice`
+--
+
+DROP TABLE IF EXISTS `acme_ecommerce_domain_model_invoice`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `acme_ecommerce_domain_model_invoice` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `curency_id` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `IDX_EB94E982A76ED395` (`user_id`),
+  KEY `IDX_EB94E98237CE34B3` (`curency_id`),
+  CONSTRAINT `FK_EB94E98237CE34B3` FOREIGN KEY (`curency_id`) REFERENCES `acme_ecommerce_domain_model_curency` (`id`),
+  CONSTRAINT `FK_EB94E982A76ED395` FOREIGN KEY (`user_id`) REFERENCES `acme_ecommerce_domain_model_user` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `acme_ecommerce_domain_model_invoice`
+--
+
+LOCK TABLES `acme_ecommerce_domain_model_invoice` WRITE;
+/*!40000 ALTER TABLE `acme_ecommerce_domain_model_invoice` DISABLE KEYS */;
+INSERT INTO `acme_ecommerce_domain_model_invoice` VALUES (1,1,2);
+/*!40000 ALTER TABLE `acme_ecommerce_domain_model_invoice` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `acme_ecommerce_domain_model_invoiceitem`
+--
+
+DROP TABLE IF EXISTS `acme_ecommerce_domain_model_invoiceitem`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `acme_ecommerce_domain_model_invoiceitem` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `invoice` int(11) DEFAULT NULL,
+  `product` int(11) DEFAULT NULL,
+  `curency_id` int(11) NOT NULL,
+  `price` decimal(10,2) NOT NULL,
+  `quantity` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `UNIQ_DC8DC46FD34A04AD` (`product`),
+  KEY `IDX_DC8DC46F90651744` (`invoice`),
+  KEY `IDX_DC8DC46F37CE34B3` (`curency_id`),
+  CONSTRAINT `FK_DC8DC46F37CE34B3` FOREIGN KEY (`curency_id`) REFERENCES `acme_ecommerce_domain_model_curency` (`id`),
+  CONSTRAINT `FK_DC8DC46F90651744` FOREIGN KEY (`invoice`) REFERENCES `acme_ecommerce_domain_model_invoice` (`id`),
+  CONSTRAINT `FK_DC8DC46FD34A04AD` FOREIGN KEY (`product`) REFERENCES `acme_ecommerce_domain_model_product` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `acme_ecommerce_domain_model_invoiceitem`
+--
+
+LOCK TABLES `acme_ecommerce_domain_model_invoiceitem` WRITE;
+/*!40000 ALTER TABLE `acme_ecommerce_domain_model_invoiceitem` DISABLE KEYS */;
+INSERT INTO `acme_ecommerce_domain_model_invoiceitem` VALUES (1,1,4,1,350106.00,3);
+/*!40000 ALTER TABLE `acme_ecommerce_domain_model_invoiceitem` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `acme_ecommerce_domain_model_product`
+--
+
+DROP TABLE IF EXISTS `acme_ecommerce_domain_model_product`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `acme_ecommerce_domain_model_product` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `category_id` int(11) NOT NULL,
+  `curency_id` int(11) NOT NULL,
+  `title` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `description` tinytext COLLATE utf8_unicode_ci NOT NULL,
+  `price` decimal(10,2) NOT NULL,
+  `quantity` int(11) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `IDX_A8BBFA6B12469DE2` (`category_id`),
+  KEY `IDX_A8BBFA6B37CE34B3` (`curency_id`),
+  CONSTRAINT `FK_A8BBFA6B37CE34B3` FOREIGN KEY (`curency_id`) REFERENCES `acme_ecommerce_domain_model_curency` (`id`),
+  CONSTRAINT `FK_A8BBFA6B12469DE2` FOREIGN KEY (`category_id`) REFERENCES `acme_ecommerce_domain_model_category` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `acme_ecommerce_domain_model_product`
+--
+
+LOCK TABLES `acme_ecommerce_domain_model_product` WRITE;
+/*!40000 ALTER TABLE `acme_ecommerce_domain_model_product` DISABLE KEYS */;
+INSERT INTO `acme_ecommerce_domain_model_product` VALUES (1,1,3,'Porsche 911 turbo','orem ipsum dolor sit amet, consectetur adipiscing elit.',183946.00,10),(2,1,1,'Jaguar F-type','orem ipsum dolor sit amet, consectetur adipiscing elit.',507544.00,10),(3,1,1,'Ferrari 458','orem ipsum dolor sit amet, consectetur adipiscing elit.',609166.00,21),(4,1,1,'McLaren 650S','orem ipsum dolor sit amet, consectetur adipiscing elit.',350106.00,40),(5,2,1,'Lifan','orem ipsum dolor sit amet, consectetur adipiscing elit.',316019.00,35),(6,2,1,'Honda','orem ipsum dolor sit amet, consectetur adipiscing elit.',611514.00,20),(7,2,3,'Kawasaki','orem ipsum dolor sit amet, consectetur adipiscing elit.',744290.00,49),(8,2,2,'Suzuki','orem ipsum dolor sit amet, consectetur adipiscing elit.',394475.00,17),(9,2,2,'Yamaha','orem ipsum dolor sit amet, consectetur adipiscing elit.',319229.00,33),(10,1,2,'Porsche Boxster','orem ipsum dolor sit amet, consectetur adipiscing elit.',156871.00,47),(11,1,3,'Porsche Cayman','orem ipsum dolor sit amet, consectetur adipiscing elit.',709443.00,13),(12,1,2,'Porsche 911 Turbo / Turbo S','orem ipsum dolor sit amet, consectetur adipiscing elit.',614086.00,38),(13,1,3,'McLaren 650S RED','orem ipsum dolor sit amet, consectetur adipiscing elit.',322282.00,38),(14,2,1,'Lifan BLUE','orem ipsum dolor sit amet, consectetur adipiscing elit.',893483.00,29),(15,2,3,'Honda 350','orem ipsum dolor sit amet, consectetur adipiscing elit.',316996.00,40),(16,2,1,'Kawasaki 650','orem ipsum dolor sit amet, consectetur adipiscing elit.',873267.00,48),(17,2,2,'Suzuki 1200','orem ipsum dolor sit amet, consectetur adipiscing elit.',703462.00,14),(18,2,1,'Yamaha 750','orem ipsum dolor sit amet, consectetur adipiscing elit.',194700.00,22);
+/*!40000 ALTER TABLE `acme_ecommerce_domain_model_product` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `acme_ecommerce_domain_model_user`
+--
+
+DROP TABLE IF EXISTS `acme_ecommerce_domain_model_user`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `acme_ecommerce_domain_model_user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `login` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `UNIQ_EE911BC7AA08CB10` (`login`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `acme_ecommerce_domain_model_user`
+--
+
+LOCK TABLES `acme_ecommerce_domain_model_user` WRITE;
+/*!40000 ALTER TABLE `acme_ecommerce_domain_model_user` DISABLE KEYS */;
+INSERT INTO `acme_ecommerce_domain_model_user` VALUES (1,'testUser','2c98f8976c69cff99a8f4964bc3505de');
+/*!40000 ALTER TABLE `acme_ecommerce_domain_model_user` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2015-07-09  0:47:26
