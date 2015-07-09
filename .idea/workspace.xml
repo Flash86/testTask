@@ -2,40 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="25c61b10-b832-48e5-9352-d462598ff5c9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/commandlinetools/Custom_TYPO3_Flow.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/commandlinetools/schemas/frameworkDescriptionVersion1.1.3.xsd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/test_task.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Packages/Application/Acme.Ecommerce/Classes/Acme/Ecommerce/Domain/Repository/ProductRepository.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Packages/Application/TYPO3.Blog/Classes/TYPO3/Blog/Controller/PostController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Packages/Application/TYPO3.Blog/Classes/TYPO3/Blog/Controller/SetupController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Packages/Application/TYPO3.Blog/Classes/TYPO3/Blog/Controller/StandardController.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Packages/Application/TYPO3.Blog/Classes/TYPO3/Blog/Domain/Model/Post.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Packages/Application/TYPO3.Blog/Classes/TYPO3/Blog/Domain/Repository/PostRepository.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Packages/Application/TYPO3.Blog/Resources/Private/Layouts/Default.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Packages/Application/TYPO3.Blog/Resources/Private/Templates/Post/Edit.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Packages/Application/TYPO3.Blog/Resources/Private/Templates/Post/Index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Packages/Application/TYPO3.Blog/Resources/Private/Templates/Post/New.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Packages/Application/TYPO3.Blog/Resources/Private/Templates/Post/Show.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Packages/Application/TYPO3.Blog/Resources/Private/Templates/Setup/Index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Packages/Application/TYPO3.Blog/Resources/Private/Templates/Standard/Index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Packages/Application/TYPO3.Blog/Tests/Unit/Domain/Model/PostTest.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Packages/Application/TYPO3.Blog/composer.json" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/_Resources/Static/Packages/TYPO3.Flow" afterPath="$PROJECT_DIR$/Web/_Resources/Static/Packages/TYPO3.Flow" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Web/_Resources/Static/Packages/TYPO3.Fluid" afterPath="$PROJECT_DIR$/Web/_Resources/Static/Packages/TYPO3.Fluid" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sqlDump/AcmeEcommerceDump" afterPath="$PROJECT_DIR$/sqlDump/AcmeEcommerceDump" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Packages/Libraries/composer/ClassLoader.php" afterPath="$PROJECT_DIR$/Packages/Libraries/composer/ClassLoader.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Packages/Application/Acme.Ecommerce/Classes/Acme/Ecommerce/Domain/Model/InvoiceItem.php" afterPath="$PROJECT_DIR$/Packages/Application/Acme.Ecommerce/Classes/Acme/Ecommerce/Domain/Model/InvoiceItem.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Configuration/PackageStates.php" afterPath="$PROJECT_DIR$/Configuration/PackageStates.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Packages/Application/Acme.Ecommerce/Configuration/Routes.yaml" afterPath="$PROJECT_DIR$/Packages/Application/Acme.Ecommerce/Configuration/Routes.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Configuration/Development/Settings.yaml" afterPath="$PROJECT_DIR$/Configuration/Development/Settings.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Packages/Libraries/autoload.php" afterPath="$PROJECT_DIR$/Packages/Libraries/autoload.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Packages/Libraries/composer/autoload_real.php" afterPath="$PROJECT_DIR$/Packages/Libraries/composer/autoload_real.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testTask.iws" />
@@ -65,7 +32,20 @@
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.101580136" vertical-offset="0" max-vertical-offset="886">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="composer.lock" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.lock">
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.965517" vertical-offset="0" max-vertical-offset="33012">
+              <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -79,6 +59,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/composer.lock" />
         <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
@@ -180,12 +161,20 @@
       <option name="number" value="Default" />
       <updated>1436426649571</updated>
     </task>
+    <task id="LOCAL-00001" summary="Remove .idea&#10;Reload mysqlDump">
+      <created>1436427331965</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1436427331965</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-2" y="0" width="1924" height="1057" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -223,6 +212,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="Remove .idea&#10;Reload mysqlDump" />
+    <option name="LAST_COMMIT_MESSAGE" value="Remove .idea&#10;Reload mysqlDump" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -245,10 +236,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/composer.lock">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.965517" vertical-offset="0" max-vertical-offset="33012">
+          <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.101580136" vertical-offset="0" max-vertical-offset="886">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding />
         </state>
       </provider>

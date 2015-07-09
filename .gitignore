@@ -3,4 +3,4 @@
 /Packages/Framework/*
 /Packages/Libraries/*
 /.idea/
-/composer.lock
+composer.lock
