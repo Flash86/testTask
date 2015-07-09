@@ -1,7 +1,8 @@
 # testTask
 
+`composer update`  
 Sql dump you can search in /sqlDump.
-Please, set base params in /Configuration/Development/Settings.yaml and set permission params for folders 
+Please, set base params in /Configuration/Development/Settings.yaml and set permission params for folders  
 `sudo ./flow core:setfilepermissions yourUser www-data www-data`
 
 
