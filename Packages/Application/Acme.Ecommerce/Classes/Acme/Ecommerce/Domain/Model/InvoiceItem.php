@@ -34,7 +34,7 @@ class InvoiceItem
 
     /**
      * @var \Acme\Ecommerce\Domain\Model\Product>
-     * @ORM\OneToOne(targetEntity="Acme\Ecommerce\Domain\Model\Product")
+     * @ORM\ManyToOne(targetEntity="Acme\Ecommerce\Domain\Model\Product")
      **/
     protected $product;
 

@@ -12,7 +12,7 @@ TYPO3:
   Flow:
     persistence:
       backendOptions:
-        dbname: 'AcmeEcommerce'       # adjust to your database name
-        user: 'root'             # adjust to your database user
-        password: '1111'         # adjust to your database password
+        dbname: 'testAcme'       # adjust to your database name
+        user: 'master'             # adjust to your database user
+        password: 'gtnhjdbx'         # adjust to your database password
 

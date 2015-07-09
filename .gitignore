@@ -1,2 +1,6 @@
 /Data/Logs/*
 /Data/Temporary/Development/*
+/Packages/Framework/*
+/Packages/Libraries/*
+/.idea/
+/composer.lock

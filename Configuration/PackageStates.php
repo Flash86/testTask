@@ -236,12 +236,12 @@ return array (
       'packagePath' => 'Libraries/mikey179/vfsStream/',
       'classesPath' => 'src/main/php/',
     ),
-    'TYPO3.Party' => 
+    'TYPO3.Fluid' => 
     array (
       'manifestPath' => '',
-      'composerName' => 'typo3/party',
+      'composerName' => 'typo3/fluid',
       'state' => 'active',
-      'packagePath' => 'Framework/TYPO3.Party/',
+      'packagePath' => 'Framework/TYPO3.Fluid/',
       'classesPath' => 'Classes/',
     ),
     'TYPO3.Eel' => 
@@ -260,12 +260,12 @@ return array (
       'packagePath' => 'Framework/TYPO3.Flow/',
       'classesPath' => 'Classes/',
     ),
-    'TYPO3.Fluid' => 
+    'TYPO3.Party' => 
     array (
       'manifestPath' => '',
-      'composerName' => 'typo3/fluid',
+      'composerName' => 'typo3/party',
       'state' => 'active',
-      'packagePath' => 'Framework/TYPO3.Fluid/',
+      'packagePath' => 'Framework/TYPO3.Party/',
       'classesPath' => 'Classes/',
     ),
     'TYPO3.Welcome' => 
@@ -291,14 +291,6 @@ return array (
       'classesPath' => 'Classes/',
       'manifestPath' => '',
       'composerName' => 'acme/ecommerce',
-    ),
-    'TYPO3.Blog' => 
-    array (
-      'state' => 'active',
-      'packagePath' => 'Application/TYPO3.Blog/',
-      'classesPath' => 'Classes/',
-      'manifestPath' => '',
-      'composerName' => 'typo3/blog',
     ),
   ),
   'version' => 4,

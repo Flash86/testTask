@@ -64,7 +64,7 @@
 
 #Cart
 -
-  name: 'Add product to cart'
+  name: 'Get cart cart'
   uriPattern: 'cart/curency/{curencyId}'
   defaults:
     '@package':    'Acme.Ecommerce'
